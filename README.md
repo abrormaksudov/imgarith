@@ -32,42 +32,55 @@ devtools::install_github("abrormaksudov/imgarith")
 ## Usage
 ### Basic Arithmetic
 
+```
 library(imgarith)
 library(magick)
+```
 
 # Create test images
+```
 img1 <- magick::image_blank(100, 100, "rgb(100,150,200)")
 img2 <- magick::image_blank(100, 100, "rgb(200,100,50)")
+```
 
 # Image-image operations
+```
 sum_img <- img1 + img2      # Add images
 diff_img <- img1 - img2     # Subtract images
 prod_img <- img1 * img2     # Multiply images
 quot_img <- img1 / img2     # Divide images
+```
 
 # Image-number operations
+```
 bright <- img1 + 50         # Increase brightness
 dark <- img1 - 30           # Decrease brightness
 double <- img1 * 2          # Double pixel values
 half <- img1 / 2            # Halve pixel values
-
+```
 
 ## Image Manipulation
 
 # Adjust specific region
+```
 result <- image_adjust(img1, 1:50, 1:50, 100, channels = 1)  # Make upper left quarter more red
+```
 
 # Scale image
+```
 scaled <- image_scale(img1, factor = 2, how = "both")  # Double size in both dimensions
+```
 
 # Resize multiple images to match
+```
 resized <- image_resize_all(img1, img2, width = 800, height = 600)
+```
 
 ## Requirements
 
 - magick
 
 ## License
-# 
+ 
 MIT License
 

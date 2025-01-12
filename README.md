@@ -68,6 +68,6 @@ resized <- image_resize_all(img1, img2, width = 800, height = 600)
 - magick
 
 ## License
-
+# 
 MIT License
 

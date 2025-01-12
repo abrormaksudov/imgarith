@@ -1,0 +1,17 @@
+Package: imgarith
+Title: Arithmetic Operations for Images
+Version: 0.1.0
+Authors@R:
+    person("Abror", "Maksudov", email = "abrormaksudov@yandex.com", role = c("aut", "cre", "cph"))
+Description: Provides tools for performing arithmetic operations (addition,
+    subtraction, multiplication, division) on images, as well as utility
+    functions for image resizing and manipulation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    magick
+Suggests:
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3

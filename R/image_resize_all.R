@@ -28,8 +28,8 @@
 #' @examples
 #' \dontrun{
 #' # Load two images
-#' img1 <- image_read("path/to/image1.jpg")
-#' img2 <- image_read("path/to/image2.jpg")
+#' img1 <- magick::image_read("path/to/image1.jpg")
+#' img2 <- magick::image_read("path/to/image2.jpg")
 #'
 #' # Resize to mean dimensions
 #' resized <- image_resize_all(img1, img2)
@@ -78,7 +78,7 @@ image_resize_all <- function(..., match_to = 'mean', width = NULL, height = NULL
   }
 
   info_list <- vapply(images, function(img) {
-    info <- image_info(img)
+    info <- magick::image_info(img)
     c(width = info$width, height = info$height)
   }, numeric(2))
 

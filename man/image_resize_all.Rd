@@ -41,8 +41,8 @@ Invalid dimensions (zero or non-numeric) are ignored with a warning.
 \examples{
 \dontrun{
 # Load two images
-img1 <- image_read("path/to/image1.jpg")
-img2 <- image_read("path/to/image2.jpg")
+img1 <- magick::image_read("path/to/image1.jpg")
+img2 <- magick::image_read("path/to/image2.jpg")
 
 # Resize to mean dimensions
 resized <- image_resize_all(img1, img2)

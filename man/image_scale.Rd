@@ -37,7 +37,7 @@ sharp edges and is particularly useful for:
 }
 }
 \examples{
-img <- image_blank(100, 100, "red")
+img <- magick::image_blank(100, 100, "red")
 
 # Scale both dimensions by 2 (resulting size: 200x200)
 scaled <- image_scale(img, factor = 2, how = "both")

@@ -25,7 +25,7 @@
 #' * Maintaining crisp edges in icons or sprites
 #'
 #' @examples
-#' img <- image_blank(100, 100, "red")
+#' img <- magick::image_blank(100, 100, "red")
 #'
 #' # Scale both dimensions by 2 (resulting size: 200x200)
 #' scaled <- image_scale(img, factor = 2, how = "both")
@@ -49,7 +49,7 @@ image_scale <- function(img, factor = 2, how = "both") {
   if (!how %in% c("both", "width", "height"))
     stop("'how' must be one of: 'both', 'width', 'height'")
 
-  data <- image_data(img)
+  data <- magick::image_data(img)
   new_width <- if(how %in% c("both", "width")) dim(data)[2] * factor else dim(data)[2]
   new_height <- if(how %in% c("both", "height")) dim(data)[3] * factor else dim(data)[3]
 

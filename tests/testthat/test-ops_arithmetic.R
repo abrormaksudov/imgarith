@@ -8,16 +8,16 @@ test_that("airthmetic properties hold correctly", {
   e4 <- imgs$black + imgs$black - imgs$black + imgs$black
   e5 <- 2 * imgs$black + imgs$black - imgs$black * 5 + 4 * imgs$black
 
-  expect_equal(image_data(e1), image_data(e2))
-  expect_equal(image_data(e1), image_data(e3))
-  expect_equal(image_data(e1), image_data(e4))
-  expect_equal(image_data(e2), image_data(e5))
+  expect_equal(magick::image_data(e1), magick::image_data(e2))
+  expect_equal(magick::image_data(e1), magick::image_data(e3))
+  expect_equal(magick::image_data(e1), magick::image_data(e4))
+  expect_equal(magick::image_data(e2), magick::image_data(e5))
 
   e1 <- 5 * imgs$custom * 5
   e2 <- 25 * imgs$custom
   e3 <- imgs$custom * 25
 
-  expect_equal(image_data(e1), image_data(e2))
+  expect_equal(magick::image_data(e1), magick::image_data(e2))
 })
 
 

@@ -36,7 +36,7 @@
 #'
 #' @examples
 #' # Create a test image
-#' img <- image_blank(100, 100, "white")
+#' img <- magick::image_blank(100, 100, "white")
 #'
 #' # Make upper left quarter more red by adding 100 (with wraparound)
 #' result1 <- image_adjust(img, 1:50, 1:50, 100, channels = 1)
@@ -53,7 +53,7 @@ image_adjust <- function(img, x_range, y_range, value, channels = 1:3, clamp = F
   if (!is.numeric(value)) stop("Value must be numeric")
   if (!all(channels %in% 1:3)) stop("Channels must be values between 1 and 3")
 
-  data <- image_data(img)
+  data <- magick::image_data(img)
 
   if (max(x_range) > dim(data)[2]) stop("x_range exceeds image width")
   if (max(y_range) > dim(data)[3]) stop("y_range exceeds image height")

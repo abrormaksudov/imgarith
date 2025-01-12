@@ -55,7 +55,7 @@ Image dimensions and coordinates use the following system:
 }
 \examples{
 # Create a test image
-img <- image_blank(100, 100, "white")
+img <- magick::image_blank(100, 100, "white")
 
 # Make upper left quarter more red by adding 100 (with wraparound)
 result1 <- image_adjust(img, 1:50, 1:50, 100, channels = 1)

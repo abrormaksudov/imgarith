@@ -1,6 +1,6 @@
 Package: imgarith
 Title: Arithmetic Operations for Images
-Version: 0.1.0
+Version: 1.0.0
 Authors@R:
     person("Abror", "Maksudov", email = "abrormaksudov@yandex.com", role = c("aut", "cre", "cph"))
 Description: Provides tools for performing arithmetic operations (addition,

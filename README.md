@@ -26,7 +26,7 @@ You can install the development version of `imgarith` from GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("yourusername/imgarith")
+devtools::install_github("abrormaksudov/imgarith")
 ```
 
 ## Usage

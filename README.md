@@ -1,5 +1,6 @@
 This package is made as the final project for CS50R course. 
 <hr>
+
 # imgarith
 
 <!-- badges: start -->
